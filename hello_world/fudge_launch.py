@@ -2,7 +2,7 @@ import clusterfudge
 
 
 def main():
-    workload = 'import os, time; task_id = os.environ.get("CLUSTERFUDGE_TASK_ID"); print(f"Hello from TASK_ID={task_id}"); time.sleep(60)'
+    workload = 'import os, time; replica_index = os.environ.get("CLUSTERFUDGE_REPLICA_INDEX"); print(f"Hello from REPLICA={replica_index}"); time.sleep(60)'
 
     client = clusterfudge.Client()
     launch = client.create_launch(
