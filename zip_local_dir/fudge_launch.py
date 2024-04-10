@@ -14,7 +14,7 @@ def main():
             deployment=clusterfudge.LocalDir(),
             jobs=[
                 clusterfudge.Job(
-                    short_name="git",
+                    short_name="zip",
                     replicas=1,
                     processes=[
                         clusterfudge.Process(
