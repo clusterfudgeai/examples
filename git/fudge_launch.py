@@ -8,7 +8,7 @@ def main():
             name="git example",
             description="Example showing how we can clone git repos",
             deployment=clusterfudge.GitRepo(
-                repo="git@github.com:clusterfudgeai/examples.git",
+                repo="https://github.com/clusterfudgeai/examples",
                 branch="main",
             ),
             jobs=[
